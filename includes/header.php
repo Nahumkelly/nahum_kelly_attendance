@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.1">
-    <title>PHP Primer - <?php echo "$title"?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="css/sitestyle.css">
+    <title>Attendance - <?php echo "$title"?></title>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-pills">
                     <li class="nav-item">
-                        <a class="nav-link actve " href="index.html">Home</a>
+                        <a class="nav-link actve " href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kelly.html">Link</a>
@@ -56,4 +57,4 @@
         </div>
 
         <div class="container">
-        <h2>Follow each link to the page example</h2>
+        

@@ -15,7 +15,7 @@ echo '
         
         </div>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" >Home</a></li>
+            <li class="list-inline-item"><a href="index.php" >Home</a></li>
             <li class="list-inline-item"><a href="#">Services</a></li>
             <li class="list-inline-item"><a href="#">About</a></li>
             <li class="list-inline-item"><a href="#">Terms</a></li>
@@ -36,7 +36,17 @@ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#dob" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+      yearRange: "-120:+0",
+    });
+  } );
+  </script>
 </body>
 
 </html>
