@@ -33,14 +33,12 @@ body {
 .navbar-toggler {
     background-color: black;
 }
-
-
-}
 .footer-basic {
     padding: 00px 0;
     background-color: rgb(253, 249, 5);
     color: black;
 }
+
 .footer-basic ul {
     padding: 0;
     list-style: none;
@@ -49,24 +47,29 @@ body {
     line-height: 1.6;
     margin-bottom: 0;
 }
+
 .footer-basic li {
     padding: 0 10px;
 }
+
 .footer-basic ul a {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
 }
+
 .footer-basic ul a:hover {
     opacity: 30;
     background-color: Black;
     color: rgb(253, 249, 5);
 }
+
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
     color: Black;
 }
+
 .footer-basic .social>a {
     font-size: 24px;
     width: 40px;
@@ -80,11 +83,13 @@ body {
     color: Black;
     opacity: 100;
 }
+
 .footer-basic .social>a:hover {
     opacity: 50;
     background-color: Black;
     color: rgb(253, 249, 5);
 }
+
 .footer-basic .copyright {
     margin-top: 15px;
     text-align: center;
@@ -92,17 +97,20 @@ body {
     color: black;
     margin-bottom: 10px;
 }
+
 .social-icons {
     color: black;
     background-color: black;
     text-align: center;
     padding: 70px 0;
 }
+
 @media (max-width:767px) {
     .social-icons {
         padding: 50px 0;
     }
 }
+
 .social-icons i {
     font-size: 32px;
     display: inline-block;
