@@ -44,6 +44,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
       changeMonth: true,
       changeYear: true,
       yearRange: "-120:+0",
+      dateFormat: "yy-mm-dd"
     });
   } );
   </script>

@@ -42,7 +42,7 @@
                         <a class="nav-link actve " href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kelly.html">Link</a>
+                        <a class="nav-link" href="viewrecords.php">View Attendees</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>

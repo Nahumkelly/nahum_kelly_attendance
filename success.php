@@ -1,8 +1,29 @@
 <?php 
         $title = "success";
         require_once "includes/header.php";
+        require_once "db/conn.php";
+
+        if(isset($_POST['submit'])){
+            $fname =$_POST['firstname'];
+            $lname =$_POST['lastname'];
+            $dob =$_POST['dob'];
+            $email =$_POST['email'];
+            $contact =$_POST['phone'];
+            $specialty =$_POST['speciality'];
+            //call functionto insert and track is success or not
+            $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact,$specialty);
+
+            if($isSuccess){
+               echo '<h1 class="text-center text-success">You have been Registered!!</h1>';
+
+            }else{
+                echo '<h1 class="text-center text-danger">There was an error in processing</h1>';
+
+            }
+
+        }
     ?>
-    <h1 class="text-center text-success">You have been Registered!!</h1>
+    
 
     <!-- <div class="card" style="width: 22rem; background-color: rgb(253, 249, 5); color: black">
         <div class="card-body">

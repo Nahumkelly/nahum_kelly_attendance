@@ -1,6 +1,10 @@
 <?php 
-        $title = "index";
+        $title = "Index";
         require_once "includes/header.php";
+        require_once 'db/conn.php';
+
+        //get all Specialties
+        $result = $crud->getSpecialties();
     ?>
 
 <h1 class="text-center">Registration for IT Conference</h1>
@@ -25,11 +29,9 @@
         <div class="form-group">
             <label for="speciality">Area of Expertise</label>
             <select class="form-control" id="speciality" name="speciality"style="background-color: rgb(253, 249, 5); color: black" >
-                <option>Database Admin</option>
-                <option>Software Developer</option>
-                <option>Web Administrator</option>
-                <option>Network Admin</option>
-                <option>Other</option>
+                <?php while ($r =$result->fetch(PDO::FETCH_ASSOC)) {?>
+                    <option value= "<?php echo $r['specialty_id']; ?>"><?php echo $r['name']; ?></option>
+                <?php }?>
              </select>
         </div>
 
