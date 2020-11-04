@@ -1,8 +1,17 @@
 <?php
-    $host = '127.0.0.1';
-    $db = 'attendance_db';
-    $user = 'root';
-    $psss = '';
+    //Development Connection
+    // $host = '127.0.0.1';
+    // $db = 'attendance_db';
+    // $user = 'root';
+    // $psss = '';
+    // $charset = 'utf8mb4';
+
+
+    //Remote Database
+    $host = 'remotemysql.com';
+    $db = 'CCHqDqMWUk';
+    $user = 'CCHqDqMWUk';
+    $psss = 'd7mtPuXTHa';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
