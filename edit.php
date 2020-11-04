@@ -8,10 +8,13 @@
 
         if(!isset($_GET['id']))
         {
-            echo 'Error';
+            //echo 'Error';
+            //include 'includes/errormessage.php';
+            //header('location : viewrecords.php');
         }else{
             $id = $_GET['id'];
-            $attendee = $crud->getAttendeesDetails($id); ?>
+            $attendee = $crud->getAttendeesDetails($id); 
+?>
 
 <h1 class="text-center">Edit Record</h1>
 
@@ -64,8 +67,10 @@
             else.</small>
     </div>
 
-
+              
     <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
+    <a href="viewrecords.php"class=" btn btn-danger btn-block">Cancel </a>
+    
 </form>
 <?php }?>
 <hr />

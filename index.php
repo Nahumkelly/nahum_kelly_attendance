@@ -13,12 +13,12 @@
 
         <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname"style="background-color: rgb(253, 249, 5); color: black" >
+            <input required type="text" class="form-control" id="firstname" name="firstname"style="background-color: rgb(253, 249, 5); color: black" >
         </div>
 
         <div class="form-group">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname" style="background-color: rgb(253, 249, 5); color: black"  >
+            <input required type="text" class="form-control" id="lastname" name="lastname" style="background-color: rgb(253, 249, 5); color: black"  >
         </div>
             
         <div class="form-group">
@@ -37,7 +37,7 @@
 
         <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" style="background-color: rgb(253, 249, 5); color: black" >
+            <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" style="background-color: rgb(253, 249, 5); color: black" >
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
@@ -49,6 +49,7 @@
 
        
         <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
+        <a href="index.php"class=" btn btn-danger btn-block">Cancel </a>
     </form> 
     <hr/>
     <br/>

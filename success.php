@@ -14,11 +14,11 @@
             $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact,$specialty);
 
             if($isSuccess){
-               echo '<h1 class="text-center text-success">You have been Registered!!</h1>';
+                include 'includes/successmessage.php';
 
             }else{
-                echo '<h1 class="text-center text-danger">There was an error in processing</h1>';
-
+                include 'includes/errormessage.php';
+                header('location : viewrecords.php');
             }
 
         }
