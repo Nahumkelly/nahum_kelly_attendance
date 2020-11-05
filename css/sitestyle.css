@@ -16,7 +16,7 @@ body {
     color: black;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 20px
+    font-size: 15px
 }
 
 .nav-link.actve {
@@ -33,6 +33,7 @@ body {
 .navbar-toggler {
     background-color: black;
 }
+
 .footer-basic {
     padding: 00px 0;
     background-color: rgb(253, 249, 5);

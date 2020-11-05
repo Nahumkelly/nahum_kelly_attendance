@@ -1,3 +1,7 @@
+<?php 
+//This include session file. this ffile contain code that starts/returns a session
+//By having it in the header file. it will be included on every page, allowing sesssion capability to be used on every page a cross the website
+include_once 'includes/session.php'?>
 <!DOCTYPE html>
 <html>
 
@@ -21,7 +25,7 @@
                 <img class="rounded" src="image/nahum.png" alt="Nahum" width="70&quot;" height="70&quot;"></div>
             <div class="col">
                 <h3>Nahum Kelly</h3>
-                <h4>Assignment Two</h4>
+                <h4></h4>
             </div>
             <div class="col offset-lg-3">
                 <form class="form-inline my-2 my-lg-10" >
@@ -37,21 +41,37 @@
                             style="background-color:#f9f7f7;">Toggle navigation</span><span class="navbar-toggler-icon"
                             style="color:rgba(247,247,247,0.5);"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-pills">
+                    <div>
+                    <ul class="nav navbar-pills mr-auto">
                     <li class="nav-item">
                         <a class="nav-link actve " href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="viewrecords.php">View Attendees</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
                 </ul>
                     </div>
+                    
+                    <div class="navbar-nav ml-auto">
+                    <?php 
+                            if(!isset($_SESSION['userid'])){
+                        ?>                      
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.php" style="color: black;">Login</a>
+                            </li>  
+                        <?php }else {?>  
+                            <!-- <li>
+                            <a class="nav-link" href="#" style="color: black;"></a>
+                            <spam style="color: black;">Hello <?php //echo $_SESSION['username'] ?>!</spam>
+                            </li> -->
+                            <li>
+                            <spam style="color: black;">Hello <?php echo $_SESSION['username'] ?>!</spam>
+                                <a class="nav-link" href="logout.php" style="color: black;">Logout</a>
+                            </li>
+                        <?php }?>                    
+                    </ul>
+                    </div>
+
                 </div>
             </nav>
         </div>

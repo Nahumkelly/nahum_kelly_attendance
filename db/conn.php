@@ -6,7 +6,6 @@
     // $psss = '';
     // $charset = 'utf8mb4';
 
-
     //Remote Database
     $host = 'remotemysql.com';
     $db = 'CCHqDqMWUk';
@@ -26,6 +25,11 @@
     }
 
     require_once 'crud.php';
+    require_once 'user.php';
     $crud = new crud($pdo);
+    $user = new user($pdo);
+
+    $user->insertuser("admin","password");
+    $user->insertuser("nkelly","J@son5667076");
 
 ?>
