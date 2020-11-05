@@ -19,7 +19,12 @@
 
 <h1 class="text-center">Edit Record</h1>
 
-<form method="post" action="editpost.php">
+<div class="row">
+    <div class="col">
+      <!-- 1 of 3 -->
+    </div>
+    <div class="col-xl">
+    <form method="post" action="editpost.php">
     <input type="hidden" name="id" value=" <?php echo $attendee['attendee_id'] ?>" />
 
     <div class="form-group">
@@ -73,6 +78,13 @@
     <a href="viewrecords.php"class=" btn btn-danger btn-block">Cancel </a>
     
 </form>
+    </div>
+    <div class="col">
+      <!-- 3 of 3 -->
+    </div>
+  </div>
+
+
 <?php }?>
 <hr />
 <br />

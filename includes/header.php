@@ -25,7 +25,7 @@ include_once 'includes/session.php'?>
                 <img class="rounded" src="image/nahum.png" alt="Nahum" width="70&quot;" height="70&quot;"></div>
             <div class="col">
                 <h3>Nahum Kelly</h3>
-                <h4></h4>
+                <h4>IT Conference</h4>
             </div>
             <div class="col offset-lg-3">
                 <form class="form-inline my-2 my-lg-10" >

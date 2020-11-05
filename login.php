@@ -22,27 +22,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <h1 class="text-center"><?php echo $title ?></h1>
 
-<form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
-    <table class="table table-sm">
-        <tr>
-            <td> <label for="username">Username: * </lable>
-            </td>
-            <td> <input type="text" name="username" class="form-control" id="username" value="<?php if ($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>">
+<div class="row">
+    <div class="col">
+        <!-- 1 of 3 -->
+    </div>
+    <div class="col=ml">
+        <div>
+            <p style="text-align: center;"> <img class="center" src="image/login2.png" alt="Nahum" width="120&quot;" height="120&quot;"> </p>
+                
+        </div>
 
-                <?php if (empty($username) && $_SERVER['REQUEST_METHOD'] == 'POST') echo "<p class='text-danger'>username_error</p>"; ?>
-            </td>
-        </tr>
-        <tr>
-            <td><label for="password">Password: * </label></td>
-            <td> <input type="password" name="password" class="form-control" id="password">
-                <?php if (empty($password) && isset($password_error)) echo "<p class='text-danger'>$password_error</p>"; ?>
-            </td>
-        </tr>
-    </table>
+        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+            <table class="table table-sm">
+                <tr>
+                    <td> <label for="username">Username: * </lable>
+                    </td>
+                    <td> <input type="text" name="username" class="form-control" id="username" value="<?php if ($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>">
 
-    <input type="submit" value="Login" class="btn btn-primary btn-block"><br>
-    <a href="#">Forget Password</a>
-</form>
+                        <?php if (empty($username) && $_SERVER['REQUEST_METHOD'] == 'POST') echo "<p class='text-danger'>username_error</p>"; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: * </label></td>
+                    <td> <input type="password" name="password" class="form-control" id="password">
+                        <?php if (empty($password) && isset($password_error)) echo "<p class='text-danger'>$password_error</p>"; ?>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Login" class="btn btn-primary btn-block"><br>
+            <a href="#">Forget Password</a>
+        </form>
+    </div>
+    <div class="col">
+        <!-- 3 of 3 -->
+    </div>
+</div>
+<br>
+<br>
 
 <?php
 include_once 'includes/footer.php';
