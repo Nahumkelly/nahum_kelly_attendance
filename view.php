@@ -23,7 +23,7 @@ if (!isset($_GET['id'])) {
                 <div class="card-body" style="color: black; font-size: 20px;">
                     <h2 class="card-title"><?php echo $result['firstname'] . ' ' .   $result['lastname'] ?></h2>
                     <h4 class="card-subtitle "><?php echo $result['name'] ?></h4>
-                    <h5 class="card-text">Date of Birh: <?php echo $result['dateofbirth'] ?></h5>
+                    <h5 class="card-text">Date of Birth: <?php echo $result['dateofbirth'] ?></h5>
                     <h5 class="card-text">Email Address: <?php echo $result['emailaddress'] ?></h5>
                     <h5 class="card-text">Contact Number: <?php echo $result['contactnumber'] ?></h5>
                     <br />

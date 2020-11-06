@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
             <div class="card-body" style="color: black; font-size: 20px;">
                 <h2 class="card-title"><?php echo $_POST['firstname'] . ' ' . $_POST['lastname'] ?></h2>
                 <h4 class="card-subtitle mb-2 text-muted"><?php echo $specialtyName['name'] ?></h4>
-                <h5 class="card-text">Date of Birh: <?php echo $_POST['dob'] ?></h5>
+                <h5 class="card-text">Date of Birth: <?php echo $_POST['dob'] ?></h5>
                 <h5 class="card-text">Email Address: <?php echo $_POST['email'] ?></h5>
                 <h5 class="card-text">Contact Number: <?php echo $_POST['phone'] ?></h5>
                 <a href="#" class="card-link">Card link</a>
