@@ -20,6 +20,7 @@ if (!isset($_GET['id'])) {
         </div>
         <div class="col-xl">
             <div class="card" style="width: 30rem; background-color: rgb(253, 249, 5); " >
+            <div> <img class="rounded-circle" src="<?php echo empty ($result['avatar_path']) ? 'uploads/blank.png' : $result['avatar_path']; ?>" width="120&quot;" height="120&quot;"/></div>
                 <div class="card-body" style="color: black; font-size: 20px;">
                     <h2 class="card-title"><?php echo $result['firstname'] . ' ' .   $result['lastname'] ?></h2>
                     <h4 class="card-subtitle "><?php echo $result['name'] ?></h4>

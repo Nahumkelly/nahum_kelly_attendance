@@ -11,8 +11,16 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $contact = $_POST['phone'];
     $specialty = $_POST['speciality'];
+
+    $orig_file = $_FILES["avatar"]["tmp_name"];
+    $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+    $target_dir = 'uploads/';
+    $destination ="$target_dir$contact.$ext";
+    move_uploaded_file($orig_file,$destination);
+
+
     //call functionto insert and track is success or not
-    $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty);
+    $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty, $destination);
     $specialtyName = $crud->getSpecialtyById($specialty);
 
     if ($isSuccess) {
@@ -47,7 +55,9 @@ if (isset($_POST['submit'])) {
         <!-- 1 of 3 -->
     </div>
     <div class="col-xl">
+       
         <div class="card" style="width: 30rem; background-color: rgb(253, 249, 5);">
+        <div> <img class="rounded-circle" src="<?php echo $destination ?>" width="120&quot;" height="120&quot;"/></div>
             <div class="card-body" style="color: black; font-size: 20px;">
                 <h2 class="card-title"><?php echo $_POST['firstname'] . ' ' . $_POST['lastname'] ?></h2>
                 <h4 class="card-subtitle mb-2 text-muted"><?php echo $specialtyName['name'] ?></h4>
@@ -63,7 +73,6 @@ if (isset($_POST['submit'])) {
         <!-- 3 of 3 -->
     </div>
 </div>
-
 
 
 <hr />

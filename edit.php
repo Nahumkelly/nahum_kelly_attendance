@@ -73,6 +73,12 @@
             else.</small>
     </div>
 
+    <div class="custom-file">
+                <input type="file" accept="image/*" class="custom-file-input" value="<?php echo $attendee['avatar_path'] ?> id="avatar" name="avatar" style="background-color: rgb(253, 249, 5); color: black">
+                <label class="custom-file-label" for="avatar"  style="background-color: rgb(253, 249, 5); color: black">Choose file</label>
+                <small id="avatar" class="form-text text-danger">File Upload is Optional.</small>         
+            </div>
+
               
     <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
     <a href="viewrecords.php"class=" btn btn-danger btn-block">Cancel </a>
