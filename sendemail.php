@@ -15,7 +15,7 @@
 
             try {
 
-                $email = array('from' => 'nahum_kelly@yahoo.com',
+                $email = array('from' => 'nahumkelly73@gmail.com',
                 'fromName' => 'IT Conference',
                 'apikey' => $key,
                 'subject' => $subject,
