@@ -24,7 +24,8 @@ if (isset($_POST['submit'])) {
     $specialtyName = $crud->getSpecialtyById($specialty);
 
     if ($isSuccess) {
-        SendEmail::SendMail($email, 'Welcome to IT Conference 2020', 'Dear ' . $fname . ',<br><br>You have successfully registered for this year\'s IT Conference. <br><br>Regards. <br>IT Conference Team<br>');
+        SendEmail::SendMail($email, 'Welcome to IT Conference 2020', 'Dear ' . $fname . ' '.$lname.',<br><br>This letter is the confirmation of your reservation for the Annual Conference held by the International Computer Association.<br/>This year the conference would be from April 6, 2010, to April 8, 2010.<br/><br/>You have a reserved seat in all the four workshops for the treatment of substance abuse.<br><br/>For any further queries, feel free to write to us or give us a call.<br/><br>Regards. <br/><br>IT Conference Team<br>');
+
         include 'includes/successmessage.php';
     } else {
         include 'includes/errormessage.php';
